@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+#adsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ad {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ad img {
+  width: 300px; /* Largura fixa */
+  height: 200px; /* Altura fixa */
+  object-fit: cover; /* Ajuste a imagem para cobrir a área */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+.ad h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  overflow: hidden; /* Oculta o texto que excede a caixa */
+  text-overflow: ellipsis; /* Adiciona '...' ao texto que não cabe */
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.ad p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de linhas a exibir antes do truncamento */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Oculta o texto que excede a caixa */
+  text-overflow: ellipsis; /* Adiciona '...' ao texto que não cabe */
+  white-space: normal; /* Permite a quebra de linha dentro do elemento */
+  text-align: center;
+}
+
+.ad .price {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

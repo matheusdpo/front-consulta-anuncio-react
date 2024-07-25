@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Publicar Anúncio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Publicar Anúncio</h1>
+    <form id="publishForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required>
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        <button type="submit">Publicar Anúncio</button>
+    </form>
+    <script src="publish.js"></script>
+</body>
+</html>
